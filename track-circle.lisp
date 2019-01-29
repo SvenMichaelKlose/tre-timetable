@@ -12,7 +12,7 @@
 
 (defmethod track-circle set (p)
   (with (r  (+ _fr (percent (- _tr _fr) p))
-  		 d  (+ _fd (percent (- _td _fd) p)))
+         d  (+ _fd (percent (- _td _fd) p)))
     (_elm.set-position (circle-position _fx _tx r p (degree-sin d))
                        (circle-position _fy _ty r p (degree-cos d))
                        (+ _fz (percent (- _tz _fz) p)))
