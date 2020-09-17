@@ -12,8 +12,6 @@
 
 (define-get-alias start-time _start-time :class timetable)
 
-(dont-obfuscate *date get-time)
-
 (defmethod timetable done? ()
   _done?)
 
